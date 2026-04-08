@@ -1,6 +1,6 @@
 # Universidad [Nombre de la Universidad]  
 ## Facultad de [Nombre de la Facultad]  
-### Carrera de Ingeniería en Software  
+### Carrera de [Nombre de la Carrera]  
 
 **Asignatura:** Manejo y Configuración de Software  
 **Nombre del Estudiante:** ___________________________  
@@ -12,7 +12,8 @@
 
 ## Instrucciones Generales
 
-- Cada pregunta debe ser respondida directamente en este archivo **(README.md)** debajo del enunciado correspondiente.
+- Cada pregunta debe ser respondida directamente en este archivo **(README.md)** debajo del enunciado correspondiente. 
+- Es importante que se coloque capturas de pantalla como evidencia de la parte práctica. Se recomienda crear una carpeta `images/` para almacenar las capturas de pantalla.
 - Cada respuesta debe ir acompañada de uno o más **commits**, según se indique en cada pregunta.
 - Cuando se indique, deberán realizarse acciones prácticas dentro del repositorio (como creación de archivos, ramas, resolución de conflictos, etc.).
 - Cada pregunta debe estar **etiquetada con un tag**, únicamente en el commit final correspondiente, con el formato: `"Pregunta 1"`, `"Pregunta 2"`, etc.
@@ -35,6 +36,7 @@
   - ¿Cómo se realizó el fork?
   - ¿Cómo se realizó el clone del fork?
   - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+- Realizar en la rama `main` todo lo que corresponde a esta pregunta.
 
 **📝 Respuesta:**
 
@@ -53,10 +55,11 @@
 ### Requisitos:
 
 1. Realizar un **primer commit** que incluya únicamente el archivo `.gitignore` con las reglas de exclusión definidas.
-2. Realizar un **segundo commit** donde se explique en este README la función del archivo `.gitignore` y se muestre evidencia de que los archivos y carpetas indicadas no están siendo rastreadas por Git.
+2. Realizar un **segundo commit** que incluya las creación de los archivos de prueba.
+2. Realizar un **tercer commit** donde se explique en este README la función del archivo `.gitignore` y se muestre evidencia de que los archivos y carpetas indicadas no están siendo rastreadas por Git.
 
 **Importante:**  
-- Solo el **segundo commit** debe llevar el **tag `"Pregunta 2"`**.
+- Solo el **tercer commit** debe llevar el **tag `"Pregunta 2"`**.
 
 **📝 Respuesta:**
 
@@ -71,14 +74,14 @@
 ### Requisitos:
 
 - Inicializar el repositorio con Git Flow, utilizando las ramas por defecto: `main` y `develop`.
-- Crear una rama de tipo `hotfix` con el nombre `ingresar-encabezado`.
+- Crear una rama de tipo `feature` con el nombre `ingresar-encabezado`.
 - En dicha rama, **completar con los datos personales del estudiante** el encabezado que ya se encuentra al inicio de este archivo `README.md`.
 - Realizar al menos un commit durante el desarrollo.
 - Finalizar el hotfix siguiendo el flujo de trabajo establecido por Git Flow.
 
-### En este README, se debe incluir:
+### En la sección de respuesta, se debe incluir:
 
-- Los **comandos exactos** utilizados desde la inicialización de Git Flow hasta el cierre del hotfix.
+- Los **comandos exactos** utilizados desde la inicialización de Git Flow hasta el cierre de la rama.
 - Una descripción del **proceso seguido**, indicando el propósito de cada paso.
 - Una reflexión sobre las **ventajas de aplicar Git Flow**, especialmente en contextos colaborativos o proyectos de larga duración.
 
@@ -100,24 +103,22 @@
 
 ### Parte teórica:
 
-- Explicar qué es un **issue** en GitHub.
-- Explicar qué es un **pull request** y cuál es su finalidad.
-- Indicar la diferencia entre ambos y cómo se relacionan en un entorno de trabajo colaborativo.
+- ¿Qué es un Pull Request y cuál es su función dentro de un flujo de trabajo colaborativo con Git y GitHub?
+- ¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?
+- ¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?
 
 ### Parte práctica:
 
 - Trabajar en la rama `develop`, ya existente desde la configuración de Git Flow.
-- Crear un **issue** titulado `"Respuesta a la Pregunta 4"`, en el que se indique que su objetivo es documentar esta pregunta.
-- Realizar los cambios necesarios en este archivo `README.md` para responder esta pregunta.
-- Realizar un **commit** con los cambios y subirlo a la rama `develop` del repositorio remoto.
-- Crear un **pull request** desde `develop` hacia `main` en GitHub.
-- **Vincular el pull request con el issue creado**, de manera que al ser aprobado y fusionado, el issue se cierre automáticamente.
+- Realizar los cambios necesarios en este archivo `README.md` para responder las preguntas.
+- Realizar un **commit** con los cambios de la primera pregunta y subirlo a la rama `develop` del repositorio remoto.
+- Crear un **pull request** desde `develop` hacia `main` en GitHub, con el nombre `"Pregunta 4 - Apellido Nombre"`.
+- Crear comentarios solicitando: 1. que se agregue la respuesta de la segunda pregunta y luego agregando la respuesta con el respectivo commit; y 2. el mismo procedimiento para la tercera pregunta.
 - **Aprobar** el pull request para que se haga el merge respectivo hacia `main`.
 
-### En este README, se debe incluir:
+### En la sección de respuesta, se debe incluir:
 
-- Un resumen del procedimiento realizado.
-- El número y enlace del issue creado.
+- Un resumen del procedimiento realizado con las respectivas preguntas y capturas.
 - El número y enlace al pull request.
 
 **📝 Respuesta:**
@@ -141,9 +142,9 @@
 - Resolver el conflicto combinando ambos contenidos.
 - Realizar el merge de `ramaA` hacia `develop`.
 - Crear un **pull request** desde `develop` hacia `main`.
-- Una vez completado lo anterior, eliminar las ramas `ramaA` y `ramaB` tanto local como remotamente.
+- Una vez completado lo anterior, eliminar las ramas `ramaA` y `ramaB`.
 
-### En este README, se debe incluir:
+### En la sección de respuesta, se debe incluir:
 
 - El procedimiento completo:
   - Cómo se crearon las ramas.
@@ -169,15 +170,14 @@
 - Eliminar los archivos `archivoA.txt` y `archivoB.txt` creados en preguntas anteriores.
 - Realizar un merge desde `develop` hacia `main` en el repositorio local.
 - Enviar los cambios de la rama `main` local a la rama `develop` del repositorio remoto (fork). Recuerde incluir todos los tags creados (6 tags).
-- Finalmente, crear un **pull request** desde la rama `develop` del fork hacia la rama `main` del repositorio original (del cual se realizó el fork en la Pregunta 1). El titulo del pull request debe ser "NOMBRE APELLIDOS", en la descripción colocar el link de su repositorio de GitHub.
+- Finalmente, crear un **pull request** desde la rama `develop` del fork hacia la rama `main` del repositorio original (del cual se realizó el fork en la Pregunta 1). El titulo del pull request debe ser `"NOMBRE APELLIDOS"`, en la descripción colocar el link de su repositorio de GitHub.
 
-### En este README, se debe incluir:
+### En la sección de respuesta, se debe incluir:
 
 - Una explicación del proceso realizado paso a paso.
 - Una explicación del **versionamiento semántico**, indicando:
   - En qué consiste.
   - Sus tres componentes (MAJOR, MINOR, PATCH).
-- El enlace al pull request creado hacia el repositorio original.
 - Si hace falta agregar alguna evidencia adicional, agregue un tag adicional que sea `Version Final`.
 
 **📝 Respuesta:**
