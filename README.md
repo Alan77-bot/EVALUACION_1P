@@ -96,7 +96,25 @@ origin  [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Ala
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+### 📝 Respuesta: Pregunta 2
+
+#### Función del archivo .gitignore
+La función del archivo `.gitignore` es especificarle a Git qué archivos o directorios debe omitir y no rastrear en el historial de versiones. Esto es fundamental en el desarrollo de software para evitar que se suban al repositorio archivos innecesarios como:
+* Archivos temporales o de caché.
+* Registros de errores (archivos `.log`).
+* Carpetas de dependencias o configuración local.
+* Documentación privada que no debe ser compartida en el entorno remoto.
+
+---
+
+#### Evidencia de funcionamiento
+Para verificar que las reglas de exclusión configuradas funcionan correctamente, se realizaron las siguientes pruebas:
+
+1. **Archivos `.log` y carpeta `temp/`**: Se crearon en el directorio raíz y Git los ignoró por completo.
+2. **Carpeta `doc/`**: Se agregaron los archivos `prueba.md` y `prueba.txt` dentro de esta carpeta. Tal como se definió en las reglas, Git no los detectó para el rastreo.
+3. **Prueba de exclusión específica**: Se creó un archivo llamado `fuera.md` en la raíz del proyecto. A diferencia de los archivos dentro de `doc/`, este **sí fue rastreado por Git**, demostrando que la regla de ignorar archivos de texto es específica para la carpeta indicada.
+
+![Evidencia de Gitignore](images/Pregunta_2/evidencia_gitignore.png)
 
 ---
 
