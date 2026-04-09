@@ -3,7 +3,7 @@
 ### Carrera de [SOFTWARE]  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ALAN PEÑALOZA  
+**Nombre del Estudiante:** ALAN JUSTIN PEÑALOZA  
 **Fecha:**08/04/2026
 
 ---
