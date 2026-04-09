@@ -40,7 +40,43 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+#### Diferencias Conceptuales
+* **git clone:** Es un comando que permite copiar un repositorio remoto a nuestra computadora local. Clona todo el historial, ramas y archivos del proyecto, permitiendo trabajar de manera independiente.
+* **fork:** Es una copia completa de un repositorio remoto que se crea directamente en tu cuenta de GitHub. Su propósito es permitirte modificar el código sin afectar el repositorio original.
+* **git pull:** Se utiliza para actualizar el repositorio local con los últimos cambios realizados en el repositorio remoto, combinando los cambios descargados con el trabajo actual.
+
+---
+
+#### Parte práctica:
+
+**1. ¿Cómo se realizó el fork?**
+Ingresé al repositorio original del docente (`https://github.com/Alan77-bot/EVALUACION_1P.git`) en GitHub y presioné el botón **Fork** ubicado en la esquina superior derecha. Seleccioné mi cuenta personal para generar la copia exacta en mi perfil.
+
+![Evidencia de Fork](images/pregunta_1/fork.png)
+
+**2. ¿Cómo se realizó el clone del fork?**
+Copié la URL de mi fork personal y en la terminal de mi computadora ejecuté los siguientes comandos:
+
+```bash
+git clone [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git)
+cd EVALUACION_1P
+
+![Evidencia del clone de fork](images/pregunta_1/clone.png)
+
+**3. ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?**
+Ejecuté el comando `git remote -v`, el cual mostró que las direcciones de origen apuntan a mi repositorio personal en GitHub:
+
+```text
+origin  [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git) (fetch)
+origin  [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git) (push)
+
+![Evidencia del git remote ](images/pregunta_1/remote.png)
+
+
+![Evidencia del commit](images/pregunta_1/commit.png)
+
+
+
 
 ---
 
