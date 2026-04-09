@@ -144,8 +144,24 @@ Para verificar que las reglas de exclusión configuradas funcionan correctamente
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+- Git Flow
 
+#### Comandos utilizados
+1. `git flow init`: Inicialización del entorno de trabajo con ramas `main` (producción) y `develop` (desarrollo).
+2. `git flow feature start ingresar-encabezado`: Creación de la rama aislada para trabajar en la nueva funcionalidad.
+3. `git add .` y `git commit -m "..."`: Registro de los avances durante la edición del encabezado.
+4. `git flow feature finish ingresar-encabezado`: Fusión automática de la funcionalidad en la rama `develop` y eliminación de la rama temporal.
+5. `git merge develop`: (Desde main) Integración de la funcionalidad finalizada a la rama principal.
+
+#### Descripción del proceso
+El proceso comenzó preparando el repositorio para una metodología de trabajo organizada. Al iniciar la **feature**, Git Flow nos movió automáticamente a una rama secundaria para no afectar el código estable. Una vez completado el encabezado en el `README.md` con mis datos personales (Jostin Peñaloza, 4to Nivel), se procedió a cerrar la funcionalidad, lo que garantiza que los cambios pasen a la línea de desarrollo antes de llegar a producción.
+
+#### Ventajas de Git Flow
+* **Organización:** Permite trabajar en múltiples funcionalidades al mismo tiempo sin que el código se mezcle de forma desordenada.
+* **Seguridad:** Al usar ramas como `develop`, nos aseguramos de que la rama `main` siempre contenga código que funciona perfectamente.
+* **Escalabilidad:** En proyectos de larga duración o con muchos colaboradores, facilita el manejo de versiones, correcciones urgentes (hotfixes) y lanzamientos (releases) de forma estandarizada.
+
+![Evidencia Git Flow](images/Pregunta_3/GIT_FLOW.png)
 ---
 
 ## Pregunta 4 (2 puntos)
