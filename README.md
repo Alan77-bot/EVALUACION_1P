@@ -52,28 +52,25 @@
 **1. ¿Cómo se realizó el fork?**
 Ingresé al repositorio original del docente (`https://github.com/Alan77-bot/EVALUACION_1P.git`) en GitHub y presioné el botón **Fork** ubicado en la esquina superior derecha. Seleccioné mi cuenta personal para generar la copia exacta en mi perfil.
 
-![Evidencia de Fork](images/pregunta_1/fork.png)
+![Evidencia de Fork](images/Pregunta_1/fork.png)
 
 **2. ¿Cómo se realizó el clone del fork?**
 Copié la URL de mi fork personal y en la terminal de mi computadora ejecuté los siguientes comandos:
 
-```bash
 git clone [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git)
 cd EVALUACION_1P
 
-![Evidencia del clone de fork](images/pregunta_1/clone.png)
+![Evidencia del clone de fork](images/Pregunta_1/clone.png)
 
 **3. ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?**
 Ejecuté el comando `git remote -v`, el cual mostró que las direcciones de origen apuntan a mi repositorio personal en GitHub:
 
-```text
 origin  [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git) (fetch)
 origin  [https://github.com/Alan77-bot/EVALUACION_1P.git](https://github.com/Alan77-bot/EVALUACION_1P.git) (push)
 
-![Evidencia del git remote ](images/pregunta_1/remote.png)
+![Evidencia del git remote ](images/Pregunta_1/remote.png)
 
 
-![Evidencia del commit](images/pregunta_1/commit.png)
 
 
 
