@@ -144,8 +144,24 @@ Para verificar que las reglas de exclusión configuradas funcionan correctamente
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+- Git Flow
 
+#### Comandos utilizados
+1. `git flow init`: Inicialización del entorno de trabajo con ramas `main` (producción) y `develop` (desarrollo).
+2. `git flow feature start ingresar-encabezado`: Creación de la rama aislada para trabajar en la nueva funcionalidad.
+3. `git add .` y `git commit -m "..."`: Registro de los avances durante la edición del encabezado.
+4. `git flow feature finish ingresar-encabezado`: Fusión automática de la funcionalidad en la rama `develop` y eliminación de la rama temporal.
+5. `git merge develop`: (Desde main) Integración de la funcionalidad finalizada a la rama principal.
+
+#### Descripción del proceso
+El proceso comenzó preparando el repositorio para una metodología de trabajo organizada. Al iniciar la **feature**, Git Flow nos movió automáticamente a una rama secundaria para no afectar el código estable. Una vez completado el encabezado en el `README.md` con mis datos personales (Jostin Peñaloza, 4to Nivel), se procedió a cerrar la funcionalidad, lo que garantiza que los cambios pasen a la línea de desarrollo antes de llegar a producción.
+
+#### Ventajas de Git Flow
+* **Organización:** Permite trabajar en múltiples funcionalidades al mismo tiempo sin que el código se mezcle de forma desordenada.
+* **Seguridad:** Al usar ramas como `develop`, nos aseguramos de que la rama `main` siempre contenga código que funciona perfectamente.
+* **Escalabilidad:** En proyectos de larga duración o con muchos colaboradores, facilita el manejo de versiones, correcciones urgentes (hotfixes) y lanzamientos (releases) de forma estandarizada.
+
+![Evidencia Git Flow](images/Pregunta_3/GIT_FLOW.png)
 ---
 
 ## Pregunta 4 (2 puntos)
@@ -174,7 +190,37 @@ Para verificar que las reglas de exclusión configuradas funcionan correctamente
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+Pregunta 4 - Pull Requests
+
+#### Parte Teórica
+
+**¿Qué es un Pull Request y su función?**
+Es una propuesta formal para integrar cambios desde una rama (como `develop`) hacia otra (como `main`). Su función es actuar como un espacio de revisión, discusión y auditoría del código antes de que este pase a una etapa de producción o despliegue.
+
+**¿Por qué es importante revisarlos?**
+Es vital para asegurar la calidad del software. Permite detectar errores, evitar conflictos de fusión (merge conflicts), asegurar que se cumplan los estándares de codificación y verificar que la nueva funcionalidad no rompa procesos existentes.
+
+**¿Qué validaciones se realizan?**
+1. **Calidad del código:** Que sea legible y eficiente.
+2. **Funcionalidad:** Que cumpla con los requisitos del issue o tarea.
+3. **Pruebas:** Que no introduzca bugs y que pase las pruebas automáticas si las hay.
+4. **Seguridad:** Que no exponga datos sensibles o vulnerabilidades.
+
+---
+
+#### Parte Práctica: Procedimiento Realizado
+
+1. **Trabajo en Develop:** Se respondieron las preguntas teóricas directamente en la rama `develop`.
+2. **Creación de PR:** Se abrió el Pull Request **"Pregunta 4 - Peñaloza Jostin"** desde GitHub.
+3. **Ciclo de Revisión:**
+   * Se usaron los comentarios del PR para solicitar las respuestas faltantes.
+   * Se realizaron commits adicionales para completar la información según las observaciones.
+4. **Fusión:** Una vez aprobado y verificado, se realizó el merge hacia la rama `main`.
+
+**Enlace al Pull Request:** [Insertar aquí el link de tu PR]
+**Número de PR:** #[Insertar número]
+
+![Evidencia de Pull Request](images/Pregunta_4/evidencia_pr.png)
 
 ---
 
